@@ -1,0 +1,34 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=86866ef4_002Db8ac_002D41f6_002Dbc19_002D9c88cf8fd35c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from TwoArgsClasses" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;ProjectFolder&gt;76FF587F-AF25-45ED-A4D8-0AF355351813/d:TwoArgsClasses&lt;/ProjectFolder&gt;&#xD;
+    &lt;ProjectFile&gt;76FF587F-AF25-45ED-A4D8-0AF355351813/d:OITests/f:DivisionCalculatorIOTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;76FF587F-AF25-45ED-A4D8-0AF355351813/d:OITests/f:SqrtCalculatorIOTest.cs&lt;/ProjectFile&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=96dbddc3_002De032_002D4e41_002D868c_002D09a1ffb9a30d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from AdditionCalculatorTests.cs" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;ProjectFile&gt;76FF587F-AF25-45ED-A4D8-0AF355351813/d:TwoArgsClasses/f:AdditionCalculatorTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;76FF587F-AF25-45ED-A4D8-0AF355351813/d:TwoArgsClasses/f:SubstractionCalculatorTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;76FF587F-AF25-45ED-A4D8-0AF355351813/d:TwoArgsClasses/f:DivisionCalculatorTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;76FF587F-AF25-45ED-A4D8-0AF355351813/d:TwoArgsClasses/f:MultiplyCalculatorTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;76FF587F-AF25-45ED-A4D8-0AF355351813/d:OneArgClasses/f:CosCalculatorTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;76FF587F-AF25-45ED-A4D8-0AF355351813/d:OneArgClasses/f:SinCalculatorTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;76FF587F-AF25-45ED-A4D8-0AF355351813/d:OneArgClasses/f:TgCalculateTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;76FF587F-AF25-45ED-A4D8-0AF355351813/d:OneArgClasses/f:CtgCalculator.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;76FF587F-AF25-45ED-A4D8-0AF355351813/d:OneArgClasses/f:SqrtCalculatorTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;76FF587F-AF25-45ED-A4D8-0AF355351813/d:OneArgClasses/f:PowCalculatorTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;76FF587F-AF25-45ED-A4D8-0AF355351813/d:TwoArgsClasses/f:MultiplyCalculatorAdvancedTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;76FF587F-AF25-45ED-A4D8-0AF355351813/d:TwoArgsClasses/f:DivisionCalculatorAdvancedTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;76FF587F-AF25-45ED-A4D8-0AF355351813/d:TwoArgsClasses/f:TwoArgFactoryTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;76FF587F-AF25-45ED-A4D8-0AF355351813/d:OneArgClasses/f:OneArgFactoryTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;76FF587F-AF25-45ED-A4D8-0AF355351813/d:TwoArgsClasses/f:PowCalculatorTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFolder&gt;76FF587F-AF25-45ED-A4D8-0AF355351813/d:OneArgClasses&lt;/ProjectFolder&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=991e32f4_002De4a5_002D43c0_002Da9bb_002D3065c70b32bc/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;Calculator.Tests&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Project Location="C:\Users\pidaser\Documents\GitHub\omgtu_project\Calculator\Calculator.Tests" Presentation="&amp;lt;Calculator.Tests&amp;gt;" /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b05de868_002D620a_002D495e_002D9d54_002D969b2bb096bb/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from SqrtCalculatorIOTest.cs" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;ProjectFile&gt;76FF587F-AF25-45ED-A4D8-0AF355351813/d:OITests/f:SqrtCalculatorIOTest.cs&lt;/ProjectFile&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
