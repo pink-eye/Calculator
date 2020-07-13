@@ -184,8 +184,8 @@ namespace Calculator
         {
             textBox1.Text = textBox1.Text + ",";
         }
-
-        private void textClear(object sender, EventArgs e)
+        
+        private void clear_Click(object sender, EventArgs e)
         {
             textBox1.Text = "";
             textBox2.Text = "";
@@ -193,7 +193,7 @@ namespace Calculator
             textBox4.Text = "";
         }
 
-        private void del_Click(object sender, EventArgs e)
+        private void backspace_Click(object sender, EventArgs e)
         {
             if (textBox1.Text.Length == 0)
             {
@@ -202,8 +202,7 @@ namespace Calculator
             }
             else
                 textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1, 1);
-        }
-
+        }       
         /// <summary>
         ///  processing a click on "equal" button where is the main choice of further operations and functions
         /// </summary>
