@@ -6,8 +6,9 @@
         {
             switch (oper)
             {
-                case ("exp"): return new ExpCalculator();                
-    }
+                case ("exp"): return new ExpCalculator();
+                case ("sqrt"): return new SqrtCalculator();
+            }
             return null;
         }
     }
