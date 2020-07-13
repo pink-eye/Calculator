@@ -19,7 +19,8 @@ namespace CalculatorWeb.Controllers
                  new SelectListItem() { Value = "minus", Text = "minus" },
                  new SelectListItem() { Value = "div", Text = "division" },
                  new SelectListItem() { Value = "pow", Text = "pow" },
-                 new SelectListItem() { Value = "exp", Text = "exp" }
+                 new SelectListItem() { Value = "exp", Text = "exp" },
+                 new SelectListItem() { Value = "sqrt", Text = "sqrt" }
             };         
             return View();
         }
@@ -50,7 +51,9 @@ namespace CalculatorWeb.Controllers
                  new SelectListItem() { Value = "minus", Text ="minus" },
                  new SelectListItem() { Value = "div", Text ="division" },
                  new SelectListItem() { Value = "pow", Text = "pow" },
-                 new SelectListItem() { Value = "exp", Text = "exp" }
+                 new SelectListItem() { Value = "exp", Text = "exp" },
+                 new SelectListItem() { Value = "sqrt", Text = "sqrt" }
+
             };
             return View();
         }
