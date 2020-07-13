@@ -9,6 +9,7 @@ namespace Calculator.Tests.OneArgsClasses
     {
         [Test]
         [TestCase("exp", typeof(ExpCalculator))]
+        [TestCase("sqrt", typeof(SqrtCalculator))]
         public void CalculateTest(string name, Type type)
         {
             var calculator = OneArgFactory.CreateCalculator(name);
