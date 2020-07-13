@@ -131,7 +131,12 @@ namespace Calculator
                 case ("sqrt"):
                     op1 = "sqrt";
                     break;
-
+                case ("exp"):
+                    op1 = "exp";
+                    break;
+                case ("pow"):
+                    op1 = "^";
+                    break;
             }
             textBox4.Text = op1;
         }
@@ -153,7 +158,6 @@ namespace Calculator
             textBox2.Text = textBox1.Text;
             textBox1.Text = Convert.ToString(result);
             textBox4.Text = Operation;
-
         }
         /// <summary>
         /// processing choose operation and function
@@ -165,12 +169,12 @@ namespace Calculator
             Operation = ((Button)sender).Name; 
             oper1();
         }
-            private void funcChoose(object sender, EventArgs e) // one args
-            {
+        private void funcChoose(object sender, EventArgs e) // one args
+        {
             firstNumber = Convert.ToDouble(textBox1.Text);
             Operation = ((Button)sender).Name;
             def2();           
-     }
+        }
 
    
         // Write result in textBox1 and make the result the first number to continue calculations
@@ -209,12 +213,13 @@ namespace Calculator
         {
             if (textBox1.Text.Length > 0) // textBox is not empty
             {
-                secondNumber = Convert.ToDouble(textBox1.Text);      
+                secondNumber = Convert.ToDouble(textBox1.Text);
                 textBox3.Text = textBox1.Text;
                 ITwoArgCalculator calculator = TwoArgFactory.CreateCalculator(Operation);
                 result = calculator.Calculate(firstNumber, secondNumber);
                 def1();
             }
+            
             textBox1.Focus();
         }
        
