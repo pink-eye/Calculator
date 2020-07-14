@@ -91,7 +91,7 @@ namespace Calculator
                     break;
                 case "button9":
                     _ = ((textBox1.Text == "0") && (textBox1.Text != null)) ? (textBox1.Text = "9") : (textBox1.Text = textBox1.Text + "9");
-                    break;         
+                    break;                
             }
             textBox1.Focus();
             textBox1.SelectionStart = textBox1.Text.Length;
@@ -177,13 +177,7 @@ namespace Calculator
         }
 
    
-        // Write result in textBox1 and make the result the first number to continue calculations
-        
-
-        private void dot_Click(object sender, EventArgs e)
-        {
-            textBox1.Text = textBox1.Text + ",";
-        }
+        // Write result in textBox1 and make the result the first number to continue 
         
         private void clear_Click(object sender, EventArgs e)
         {
@@ -218,7 +212,8 @@ namespace Calculator
                 result = calculator.Calculate(firstNumber, secondNumber);
                 def1();
             }
-            
+            else
+                textBox1.Text = null;
             textBox1.Focus();
         }
        
