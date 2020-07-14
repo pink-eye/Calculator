@@ -137,7 +137,7 @@ namespace Calculator
                 case ("pow"):
                     op1 = "^";
                     break;
-            }
+            }            
             textBox4.Text = op1;
         }
         /// <summary>
@@ -155,7 +155,7 @@ namespace Calculator
         {
             IOneArgCalculator calculator = OneArgFactory.CreateCalculator(Operation);
             result = calculator.Calculate(firstNumber);
-            textBox2.Text = textBox1.Text;
+            textBox3.Text = textBox1.Text;
             textBox1.Text = Convert.ToString(result);
             textBox4.Text = Operation;
         }
@@ -207,6 +207,7 @@ namespace Calculator
             if (textBox1.Text.Length > 0) // textBox is not empty
             {
                 secondNumber = Convert.ToDouble(textBox1.Text);
+                firstNumber = Convert.ToDouble(textBox2.Text);
                 textBox3.Text = textBox1.Text;
                 ITwoArgCalculator calculator = TwoArgFactory.CreateCalculator(Operation);
                 result = calculator.Calculate(firstNumber, secondNumber);
