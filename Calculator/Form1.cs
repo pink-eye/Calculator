@@ -148,8 +148,7 @@ namespace Calculator
             textBox1.Text = Convert.ToString(result);
             firstNumber = result;
             textBox1.Focus();
-            textBox1.SelectionStart = textBox1.Text.Length;
-
+            textBox1.SelectionStart = textBox1.Text.Length;             
         }
         void def2()
         {
@@ -206,12 +205,24 @@ namespace Calculator
         {
             if (textBox1.Text.Length > 0) // textBox is not empty
             {
-                secondNumber = Convert.ToDouble(textBox1.Text);
-                firstNumber = Convert.ToDouble(textBox2.Text);
-                textBox3.Text = textBox1.Text;
-                ITwoArgCalculator calculator = TwoArgFactory.CreateCalculator(Operation);
-                result = calculator.Calculate(firstNumber, secondNumber);
-                def1();
+                if (textBox3.Text.Length == 0)
+                {
+                    textBox3.Text = textBox1.Text;
+                    secondNumber = Convert.ToDouble(textBox3.Text);
+                    firstNumber = Convert.ToDouble(textBox2.Text);
+                    ITwoArgCalculator calculator = TwoArgFactory.CreateCalculator(Operation);
+                    result = calculator.Calculate(firstNumber, secondNumber);
+                    def1();
+                }
+                else
+                {
+                    textBox2.Text = textBox1.Text;
+                    secondNumber = Convert.ToDouble(textBox3.Text);
+                    firstNumber = Convert.ToDouble(textBox2.Text);
+                    ITwoArgCalculator calculator = TwoArgFactory.CreateCalculator(Operation);
+                    result = calculator.Calculate(firstNumber, secondNumber);
+                    def1();
+                }
             }
             else
                 textBox1.Text = null;
