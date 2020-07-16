@@ -20,7 +20,11 @@ namespace CalculatorWeb.Controllers
                  new SelectListItem() { Value = "div", Text = "division" },
                  new SelectListItem() { Value = "pow", Text = "pow" },
                  new SelectListItem() { Value = "exp", Text = "exp" },
-                 new SelectListItem() { Value = "sqrt", Text = "sqrt" }
+                 new SelectListItem() { Value = "sqrt", Text = "sqrt" },
+                 new SelectListItem() { Value = "tg", Text = "tg" },
+                 new SelectListItem() { Value = "ctg", Text = "ctg" },
+                 new SelectListItem() { Value = "lg", Text = "lg" },
+                 new SelectListItem() { Value = "ln", Text = "ln" }
             };         
             return View();
         }
@@ -30,7 +34,7 @@ namespace CalculatorWeb.Controllers
         double secondNumber,
         string operation)
         {
-            string[] arr = { "mult", "div", "plus", "minus" };
+            string[] arr = { "mult", "div", "plus", "minus", "pow" };
             double result;
             if (arr.Contains(operation))
             {
@@ -52,8 +56,11 @@ namespace CalculatorWeb.Controllers
                  new SelectListItem() { Value = "div", Text ="division" },
                  new SelectListItem() { Value = "pow", Text = "pow" },
                  new SelectListItem() { Value = "exp", Text = "exp" },
-                 new SelectListItem() { Value = "sqrt", Text = "sqrt" }
-
+                 new SelectListItem() { Value = "sqrt", Text = "sqrt" },
+                 new SelectListItem() { Value = "tg", Text = "tg" },
+                 new SelectListItem() { Value = "ctg", Text = "ctg" },
+                 new SelectListItem() { Value = "lg", Text = "lg" },
+                 new SelectListItem() { Value = "ln", Text = "ln" }
             };
             return View();
         }
