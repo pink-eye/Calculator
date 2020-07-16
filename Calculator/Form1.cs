@@ -137,6 +137,27 @@ namespace Calculator
                 case ("pow"):
                     op1 = "^";
                     break;
+                case ("sin"):
+                    op1 = "sin";
+                    break;
+                case ("cos"):
+                    op1 = "cos";
+                    break;
+                case ("tg"):
+                    op1 = "tg";
+                    break;
+                case ("ctg"):
+                    op1 = "ctg";
+                    break;                
+                case ("lg"):
+                    op1 = "lg";
+                    break;
+                case ("ln"):
+                    op1 = "ln";
+                    break;
+                case ("fact"):
+                    op1 = "!";
+                    break;
             }            
             textBox4.Text = op1;
         }
@@ -153,10 +174,17 @@ namespace Calculator
         void def2()
         {
             IOneArgCalculator calculator = OneArgFactory.CreateCalculator(Operation);
-            result = calculator.Calculate(firstNumber);
-            textBox3.Text = textBox1.Text;
+            result = calculator.Calculate(firstNumber);                        
+            if (Operation != "fact")
+            {
+                textBox3.Text = textBox1.Text;
+                textBox4.Text = Operation;
+            }
+            else
+            {
+                textBox4.Text = textBox1.Text + "!";
+            }
             textBox1.Text = Convert.ToString(result);
-            textBox4.Text = Operation;
         }
         /// <summary>
         /// processing choose operation and function
@@ -165,14 +193,24 @@ namespace Calculator
         /// <param name="e"></param>
         private void operChoose(object sender, EventArgs e) // two args
         {
-            Operation = ((Button)sender).Name; 
-            oper1();
+            if (textBox1.Text.Length > 0)
+            {
+                Operation = ((Button)sender).Name;
+                oper1();
+            }
+            else
+                textBox1.Focus();
         }
         private void funcChoose(object sender, EventArgs e) // one args
         {
-            firstNumber = Convert.ToDouble(textBox1.Text);
-            Operation = ((Button)sender).Name;
-            def2();           
+            if (textBox1.Text.Length > 0)
+            {
+                firstNumber = Convert.ToDouble(textBox1.Text);
+                Operation = ((Button)sender).Name;
+                def2();
+            }
+            else
+                textBox1.Focus();
         }
 
    
@@ -184,6 +222,11 @@ namespace Calculator
             textBox2.Text = "";
             textBox3.Text = "";
             textBox4.Text = "";
+        }
+
+        private void dot_Click(object sender, EventArgs e)
+        {
+            _ = ((textBox1.Text == "0") && (textBox1.Text != null)) ? (textBox1.Text = ".") : (textBox1.Text = textBox1.Text + ".");
         }
 
         private void backspace_Click(object sender, EventArgs e)
@@ -203,7 +246,7 @@ namespace Calculator
         /// <param name="e"></param>
         private void equal_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text.Length > 0) // textBox is not empty
+            if (textBox1.Text.Length > 0 && textBox2.Text.Length > 0) // textBox is not empty
             {
                 if (textBox3.Text.Length == 0)
                 {
@@ -225,7 +268,7 @@ namespace Calculator
                 }
             }
             else
-                textBox1.Text = null;
+                textBox1.Focus();
             textBox1.Focus();
         }
        

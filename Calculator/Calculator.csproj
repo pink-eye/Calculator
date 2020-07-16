@@ -46,6 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OneArgClasses\FactCalculator.cs" />
+    <Compile Include="OneArgClasses\LnCalculator.cs" />
+    <Compile Include="OneArgClasses\LgCalculator.cs" />
+    <Compile Include="OneArgClasses\CtgCalculator.cs" />
+    <Compile Include="OneArgClasses\TgCalculator.cs" />
+    <Compile Include="OneArgClasses\SinCalculator.cs" />
+    <Compile Include="OneArgClasses\CosCalculator.cs" />
+    <Compile Include="OneArgClasses\SqrtCalculator.cs" />
     <Compile Include="TwoArgsClasses\AdditionCalculator.cs" />
     <Compile Include="OneArgClasses\IOneArgCalculator.cs" />
     <Compile Include="OneArgClasses\OneArgFactory.cs" />
