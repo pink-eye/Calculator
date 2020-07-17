@@ -13,6 +13,7 @@ namespace Calculator.TwoArgsClasses
                 case ("mult"): return new MultiplyCalculator();
                 case ("div"): return new DivisionCalculator();
                 case ("pow"): return new PowCalculator();
+                case ("proc"): return new ProcCalculator();
             }
             return null;
         }

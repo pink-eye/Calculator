@@ -60,7 +60,7 @@
             this.ln = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.fact = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.proc = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -510,18 +510,19 @@
             this.fact.UseVisualStyleBackColor = false;
             this.fact.Click += new System.EventHandler(this.funcChoose);
             // 
-            // button12
+            // proc
             // 
-            this.button12.BackColor = System.Drawing.Color.Gray;
-            this.button12.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button12.Location = new System.Drawing.Point(149, 99);
-            this.button12.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(130, 44);
-            this.button12.TabIndex = 36;
-            this.button12.Text = "%";
-            this.button12.UseVisualStyleBackColor = false;
+            this.proc.BackColor = System.Drawing.Color.Gray;
+            this.proc.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.proc.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.proc.Location = new System.Drawing.Point(149, 99);
+            this.proc.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.proc.Name = "proc";
+            this.proc.Size = new System.Drawing.Size(130, 44);
+            this.proc.TabIndex = 36;
+            this.proc.Text = "%";
+            this.proc.UseVisualStyleBackColor = false;
+            this.proc.Click += new System.EventHandler(this.proc_Click);
             // 
             // Form1
             // 
@@ -530,7 +531,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(431, 335);
-            this.Controls.Add(this.button12);
+            this.Controls.Add(this.proc);
             this.Controls.Add(this.fact);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.ln);
@@ -610,7 +611,7 @@
         private System.Windows.Forms.Button ln;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button fact;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button proc;
     }
 }
 

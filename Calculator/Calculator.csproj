@@ -54,6 +54,7 @@
     <Compile Include="OneArgClasses\SinCalculator.cs" />
     <Compile Include="OneArgClasses\CosCalculator.cs" />
     <Compile Include="OneArgClasses\SqrtCalculator.cs" />
+    <Compile Include="TwoArgsClasses\ProcCalculator.cs" />
     <Compile Include="TwoArgsClasses\AdditionCalculator.cs" />
     <Compile Include="OneArgClasses\IOneArgCalculator.cs" />
     <Compile Include="OneArgClasses\OneArgFactory.cs" />

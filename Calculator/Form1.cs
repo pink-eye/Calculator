@@ -158,6 +158,7 @@ namespace Calculator
                 case ("fact"):
                     op1 = "!";
                     break;
+                
             }            
             textBox4.Text = op1;
         }
@@ -196,7 +197,7 @@ namespace Calculator
             if (textBox1.Text.Length > 0)
             {
                 Operation = ((Button)sender).Name;
-                oper1();
+                oper1();                               
             }
             else
                 textBox1.Focus();
@@ -227,6 +228,15 @@ namespace Calculator
         private void dot_Click(object sender, EventArgs e)
         {
             _ = ((textBox1.Text == "0") && (textBox1.Text != null)) ? (textBox1.Text = ".") : (textBox1.Text = textBox1.Text + ".");
+        }
+
+        private void proc_Click(object sender, EventArgs e)
+        {                        
+            secondNumber = Convert.ToDouble(textBox1.Text);
+            firstNumber = Convert.ToDouble(textBox2.Text);            
+            ITwoArgCalculator calculator = TwoArgFactory.CreateCalculator("proc");
+            result = calculator.Calculate(firstNumber, secondNumber);
+            textBox1.Text = Convert.ToString(result);
         }
 
         private void backspace_Click(object sender, EventArgs e)
