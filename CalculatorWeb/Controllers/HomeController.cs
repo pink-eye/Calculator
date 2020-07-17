@@ -24,7 +24,9 @@ namespace CalculatorWeb.Controllers
                  new SelectListItem() { Value = "tg", Text = "tg" },
                  new SelectListItem() { Value = "ctg", Text = "ctg" },
                  new SelectListItem() { Value = "lg", Text = "lg" },
-                 new SelectListItem() { Value = "ln", Text = "ln" }
+                 new SelectListItem() { Value = "ln", Text = "ln" },
+                 new SelectListItem() { Value = "fact", Text = "!" },
+                 new SelectListItem() { Value = "proc", Text = "" }
             };         
             return View();
         }
@@ -60,7 +62,9 @@ namespace CalculatorWeb.Controllers
                  new SelectListItem() { Value = "tg", Text = "tg" },
                  new SelectListItem() { Value = "ctg", Text = "ctg" },
                  new SelectListItem() { Value = "lg", Text = "lg" },
-                 new SelectListItem() { Value = "ln", Text = "ln" }
+                 new SelectListItem() { Value = "ln", Text = "ln" },
+                 new SelectListItem() { Value = "fact", Text = "!" },
+                 new SelectListItem() { Value = "proc", Text = "" }
             };
             return View();
         }
