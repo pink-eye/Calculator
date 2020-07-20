@@ -10,6 +10,7 @@ namespace Calculator
     {
         double firstNumber, secondNumber, result;
         string Operation, op1;
+        int flag=0;
 
         public Form1()
         {
@@ -231,9 +232,11 @@ namespace Calculator
         }
 
         private void proc_Click(object sender, EventArgs e)
-        {                        
+        {
+            flag++;
+            textBox3.Text = textBox1.Text + "%";
             secondNumber = Convert.ToDouble(textBox1.Text);
-            firstNumber = Convert.ToDouble(textBox2.Text);            
+            firstNumber = Convert.ToDouble(textBox2.Text);
             ITwoArgCalculator calculator = TwoArgFactory.CreateCalculator("proc");
             result = calculator.Calculate(firstNumber, secondNumber);
             textBox1.Text = Convert.ToString(result);
@@ -258,7 +261,7 @@ namespace Calculator
         {
             if (textBox1.Text.Length > 0 && textBox2.Text.Length > 0) // textBox is not empty
             {
-                if (textBox3.Text.Length == 0)
+                if (textBox3.Text.Length == 0 || flag > 0)
                 {
                     textBox3.Text = textBox1.Text;
                     secondNumber = Convert.ToDouble(textBox3.Text);
